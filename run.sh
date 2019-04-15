@@ -32,7 +32,7 @@ else
     m_option=" -m ${MODE}"
 fi
 if [[ -z "${POLICY}" ]]; then
-    p_option=" -p feudal"
+    p_option=""
 else
     p_option=" -p ${POLICY}"
 fi
