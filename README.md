@@ -9,3 +9,15 @@ So I suggest to run it using docker image.
 ```
 sudo docker run -it -v "$(pwd)/log":/tmp cuspymd/feudal-networks
 ```
+### Environment variables
+You can pass options into docker image using environment variables
+
+name|option|default
+----|------|--------
+NUM_WORKERS|-w|1
+REMOTES|-r|None
+ENV_ID|-e|PongDeterministic-v4
+LOG_DIR|-l|/tmp/pong
+MODE|-m|child
+POLICY|-p|lstm
+VISUALIZE|--visualize|false
